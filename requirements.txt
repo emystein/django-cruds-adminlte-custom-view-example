@@ -5,5 +5,3 @@ easy-thumbnails
 django-image-cropping
 djangoajax
 django-datatable
-
-
