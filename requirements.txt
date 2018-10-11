@@ -1,0 +1,9 @@
+Django
+django-cruds-adminlte
+django-crispy-forms
+easy-thumbnails
+django-image-cropping
+djangoajax
+django-datatable
+
+
