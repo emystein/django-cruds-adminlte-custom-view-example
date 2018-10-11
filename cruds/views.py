@@ -1,5 +1,5 @@
-from cruds_adminlte_custom_view_example.models import KnowledgeBase
-from cruds_adminlte_custom_view_example.tables import QuestionTable
+from cruds.models import KnowledgeBase
+from cruds.tables import QuestionTable
 from cruds_adminlte.crud import CRUDView
 
 

@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100, unique=True)),
-                ('department', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='cruds_adminlte_custom_view_example.Department')),
+                ('department', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='cruds.Department')),
             ],
         ),
         migrations.CreateModel(
@@ -36,7 +36,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('text', models.TextField(unique=True)),
                 ('answer', models.TextField()),
-                ('knowledge_base', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='cruds_adminlte_custom_view_example.KnowledgeBase')),
+                ('knowledge_base', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='cruds.KnowledgeBase')),
             ],
         ),
     ]

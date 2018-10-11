@@ -1,4 +1,4 @@
-from cruds_adminlte_custom_view_example.models import Question
+from cruds.models import Question
 from table import Table
 from table.columns import Column
 
