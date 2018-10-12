@@ -12,7 +12,9 @@ A `KnowledgeBase` belongs to a `Department` and may contain many related `Questi
 
 Custom view
 -----------
-The custom view defined in this project is the `Detail` view for the `KnowledgeBase` entity. In addition to showing the default fields for a `KnowledgeBase` object, in the custom view we are going to show a table with the `Question`s related to the `KnowledgeBase` as well.
+The custom view defined in this project is the **Detail** view for the `KnowledgeBase` entity.
+
+In addition to showing the default fields for a `KnowledgeBase` object, in the custom view we are going to show a table with the `Question`s related to the `KnowledgeBase` as well.
 
 The Questions table is built using the [django-datatable](https://pypi.org/project/django-datatable/) package.
 
@@ -39,9 +41,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Navigate to http://localhost:8000/cruds/knowledgebase/list and you will see the list of KnowledgeBase objects stored in the database. This view is the default list view provided by `django-cruds-adminlte`.
+Navigate to http://localhost:8000/cruds/knowledgebase/list and you will see the list of `KnowledgeBase` objects stored in the database. This view is the default list view provided by `django-cruds-adminlte`.
 
-When you click in the `Show` button next to a listed Knowledge Base, you will see a `Detail` view for the selected KnowledgeBase object. This is the custom `Detail` view created in this project.
+When you click in the **Show** button next to a listed `KnowledgeBase`, you will see a **Detail** view for the selected `KnowledgeBase` object. This is the custom **Detail** view created in this project.
 
 
 Custom View Technical details
