@@ -5,7 +5,9 @@ Sample [Django 2.1]( https://docs.djangoproject.com/en/2.1/) project that shows 
 
 Model
 -----
-The model for this app consist in Department, KnowledgeBase and Question. KnowledgeBase belongs to a Department and contains many Questions.
+The model for this app consist in Department, KnowledgeBase and Question.
+
+A KnowledgeBase belongs to a Department and may contain many related Questions.
 
 
 Custom view
@@ -35,7 +37,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Navigate to (http://localhost:8000/cruds/knowledgebase/list) and you will see the list of KnowledgeBase objects stored in the database. This view is the default list view provided by `django-cruds-adminlte`.
+Navigate to http://localhost:8000/cruds/knowledgebase/list and you will see the list of KnowledgeBase objects stored in the database. This view is the default list view provided by `django-cruds-adminlte`.
 
 When you click in the `Show` button next to a listed Knowledge Base, you will see a `Detail` view for the selected KnowledgeBase object. This is the custom `Detail` view created in this project.
 
@@ -84,7 +86,7 @@ More about location of custom templates at: https://django-cruds-adminlte.readth
 
 
 ### Table tag
-The custom [detail.html](cruds/templates/knowledgebase/cruds/detail.html) template is a copy of the default, adding the `django-datatable` tag `render_table`:
+The custom [detail.html](./cruds/templates/knowledgebase/cruds/detail.html) template is a copy of the default, adding the `django-datatable` tag `render_table`:
 
 ```
 {% extends 'cruds/base.html' %}
