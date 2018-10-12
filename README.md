@@ -21,7 +21,9 @@ App
 
 Structure
 ---------
-Unlike usual Django projects, this one follows a single-app structure, explained here: https://zindilis.com/blog/2017/01/06/django-anatomy-for-single-app.html
+The Django app in this project is called `cruds`.
+
+Unlike usual Django projects, this project follows a single-app structure, explained here: https://zindilis.com/blog/2017/01/06/django-anatomy-for-single-app.html
 
 
 Installation
@@ -86,7 +88,7 @@ More about location of custom templates at: https://django-cruds-adminlte.readth
 
 
 ### Table tag
-The custom [detail.html](./cruds/templates/knowledgebase/cruds/detail.html) template is a copy of the default, adding the `django-datatable` tag `render_table`:
+The custom [detail.html](https://github.com/emystein/django-cruds-adminlte-custom-view-example/blob/master/cruds/templates/cruds/knowledgebase/cruds/detail.html) template is a copy of the default detail template, with the addition of Question tables, using the `django-datatable` tag `render_table`:
 
 ```
 {% extends 'cruds/base.html' %}
