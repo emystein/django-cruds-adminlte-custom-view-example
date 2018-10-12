@@ -5,14 +5,14 @@ Sample [Django 2.1]( https://docs.djangoproject.com/en/2.1/) project that shows 
 
 Model
 -----
-The model for this app consist in Department, KnowledgeBase and Question.
+The model for this app consist of `Department`, `KnowledgeBase` and `Question`.
 
-A KnowledgeBase belongs to a Department and may contain many related Questions.
+A `KnowledgeBase` belongs to a `Department` and may contain many related `Question`s.
 
 
 Custom view
 -----------
-The custom view defined in this project is the `Detail` view for the `KnowledgeBase` entity. In addition to showing the default fields for a KnowledgeBase object, in the custom view we are going to show a table with the Questions related to the KnowledgeBase as well.
+The custom view defined in this project is the `Detail` view for the `KnowledgeBase` entity. In addition to showing the default fields for a `KnowledgeBase` object, in the custom view we are going to show a table with the `Question`s related to the `KnowledgeBase` as well.
 
 The Questions table is built using the [django-datatable](https://pypi.org/project/django-datatable/) package.
 
