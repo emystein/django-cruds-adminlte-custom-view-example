@@ -82,13 +82,13 @@ Template
 --------
 
 ### Location
-The custom template must have a specific name and must be located at a specific directory too: `cruds/templates/cruds/detail.html`
+The custom template must have a specific name and must be located at a specific directory too: `cruds/templates/cruds/knowledgebase/cruds/detail.html`
 
 More about location of custom templates at: https://django-cruds-adminlte.readthedocs.io/en/latest/usage.html#overwrite-templates
 
 
 ### Table tag
-The custom [detail.html](https://github.com/emystein/django-cruds-adminlte-custom-view-example/blob/master/cruds/templates/cruds/knowledgebase/cruds/detail.html) template is a copy of the default detail template, with the addition of Question tables, using the `django-datatable` tag `render_table`:
+The custom `detail.html` template is a copy of the default detail template, with the addition of Question tables, using the `django-datatable` tag `render_table`:
 
 ```
 {% extends 'cruds/base.html' %}
