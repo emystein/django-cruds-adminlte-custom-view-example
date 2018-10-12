@@ -15,6 +15,7 @@ class KnowledgeBaseView(CRUDView):
                 return QuestionTable(knowledge_base.question_set.all())
             def get_context_data(self, **kwargs):
                 context = super(KnowledgeBaseDetailView, self).get_context_data()
+                # 'question_table' is the name used in the template for including the Questions table
                 context['question_table'] = self.question_table()
                 return context
         return KnowledgeBaseDetailView
