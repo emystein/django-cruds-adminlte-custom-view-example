@@ -16,6 +16,10 @@ The custom view defined in this project is the **Detail** view for the `Knowledg
 
 In addition to showing the default fields for a `KnowledgeBase` object, in the custom view we are going to show a table with the `Question`s related to the `KnowledgeBase` as well.
 
+From this default view: ![Default view](https://raw.githubusercontent.com/emystein/django-cruds-adminlte-custom-view-example/master/default_detail_view.png)
+
+We are going to change to this custom view: ![Custom view](https://raw.githubusercontent.com/emystein/django-cruds-adminlte-custom-view-example/master/custom_detail_view.png)
+
 The Questions table is built using the [django-datatable](https://pypi.org/project/django-datatable/) package.
 
 App
