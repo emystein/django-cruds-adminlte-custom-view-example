@@ -20,8 +20,6 @@ From this default view: ![Default view](https://raw.githubusercontent.com/emyste
 
 We are going to change to this custom view: ![Custom view](https://raw.githubusercontent.com/emystein/django-cruds-adminlte-custom-view-example/master/custom_detail_view.png)
 
-TEST 123
-
 The Questions table is built using the [django-datatable](https://pypi.org/project/django-datatable/) package.
 
 App
